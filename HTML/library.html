@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>御风图书馆 | Yufeng Library</title>
+    <meta name="description" content="御风大学图书馆 - 知识的殿堂，创新的空间">
+    <link rel="stylesheet" href="../CSS/library.css">
+    <!-- GSAP for smooth animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg" id="animatedBg"></div>
+
+    <!-- Navigation -->
+    <nav class="lib-nav">
+        <a href="../index.html" class="lib-logo">御风图书馆</a>
+        <div class="nav-links">
+            <a href="#collections">馆藏</a>
+            <a href="#spaces">空间</a>
+            <a href="#services">服务</a>
+            <a href="#digital">数字资源</a>
+            <a href="#hours">开放时间</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="lib-hero">
+        <div class="hero-content-lib reveal-element">
+            <h1>知识的殿堂</h1>
+            <p>在这里，探索无限可能</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">500万+</span>
+                    <span class="stat-label">藏书量</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">3000</span>
+                    <span class="stat-label">座位数</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">全天开放</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections Section -->
+    <section id="collections" class="lib-section">
+        <div class="section-content">
+            <h2 class="reveal-element">丰富的馆藏资源</h2>
+            <p class="section-subtitle reveal-element">涵盖各个学科领域的优质资源</p>
+            <div class="collection-grid">
+                <div class="collection-card reveal-element interactive-card">
+                    <div class="card-icon">📚</div>
+                    <h3>纸质图书</h3>
+                    <p>超过500万册中外文图书，涵盖人文、社科、理工、医学等各个学科领域</p>
+                    <div class="card-number">5,000,000+</div>
+                </div>
+                <div class="collection-card reveal-element interactive-card">
+                    <div class="card-icon">📰</div>
+                    <h3>期刊报纸</h3>
+                    <p>订阅中外文期刊3000余种，涵盖学术研究最新动态</p>
+                    <div class="card-number">3,000+</div>
+                </div>
+                <div class="collection-card reveal-element interactive-card">
+                    <div class="card-icon">💾</div>
+                    <h3>电子资源</h3>
+                    <p>数据库200个，电子图书300万册，可随时随地访问</p>
+                    <div class="card-number">3,000,000+</div>
+                </div>
+                <div class="collection-card reveal-element interactive-card">
+                    <div class="card-icon">🎞️</div>
+                    <h3>特色馆藏</h3>
+                    <p>珍贵古籍、名人手稿、校史档案等独特资源</p>
+                    <div class="card-number">珍贵</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spaces Section -->
+    <section id="spaces" class="lib-section alt-bg">
+        <div class="section-content">
+            <h2 class="reveal-element">现代化学习空间</h2>
+            <p class="section-subtitle reveal-element">满足不同学习需求的多元空间</p>
+            <div class="spaces-grid">
+                <div class="space-item reveal-element interactive-card">
+                    <div class="space-image">🏛️</div>
+                    <h3>阅览室</h3>
+                    <p>安静舒适的个人学习空间，提供3000个座位，配备护眼台灯和电源插座</p>
+                </div>
+                <div class="space-item reveal-element interactive-card">
+                    <div class="space-image">👥</div>
+                    <h3>研讨室</h3>
+                    <p>50间小组研讨室，配备白板、投影设备，支持在线预约使用</p>
+                </div>
+                <div class="space-item reveal-element interactive-card">
+                    <div class="space-image">💡</div>
+                    <h3>创新实验室</h3>
+                    <p>配备3D打印机、VR设备、创客工具，激发创新灵感</p>
+                </div>
+                <div class="space-item reveal-element interactive-card">
+                    <div class="space-image">☕</div>
+                    <h3>休闲区</h3>
+                    <p>咖啡吧、休息区，在学习之余放松身心</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="lib-section">
+        <div class="section-content">
+            <h2 class="reveal-element">专业的服务体系</h2>
+            <p class="section-subtitle reveal-element">为您的学习研究提供全方位支持</p>
+            <div class="services-list">
+                <div class="service-item reveal-element">
+                    <div class="service-icon">🔍</div>
+                    <div class="service-content">
+                        <h3>文献检索服务</h3>
+                        <p>专业馆员提供文献检索培训和咨询服务，帮助您高效获取所需资源</p>
+                    </div>
+                </div>
+                <div class="service-item reveal-element">
+                    <div class="service-icon">📖</div>
+                    <div class="service-content">
+                        <h3>学科服务</h3>
+                        <p>为各院系配备学科馆员，提供定制化的文献支持和学术服务</p>
+                    </div>
+                </div>
+                <div class="service-item reveal-element">
+                    <div class="service-icon">🎓</div>
+                    <div class="service-content">
+                        <h3>信息素养培训</h3>
+                        <p>定期举办讲座和工作坊，提升师生的信息检索和利用能力</p>
+                    </div>
+                </div>
+                <div class="service-item reveal-element">
+                    <div class="service-icon">🤝</div>
+                    <div class="service-content">
+                        <h3>馆际互借</h3>
+                        <p>与全球500+图书馆建立合作关系，可获取海量资源</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Digital Resources Section -->
+    <section id="digital" class="lib-section alt-bg">
+        <div class="section-content">
+            <h2 class="reveal-element">数字化资源平台</h2>
+            <p class="section-subtitle reveal-element">随时随地，触手可及</p>
+            <div class="digital-features">
+                <div class="feature-card reveal-element interactive-card">
+                    <h3>在线图书馆</h3>
+                    <p>24/7访问电子资源，支持校外VPN登录</p>
+                    <a href="#" class="feature-link">访问平台 →</a>
+                </div>
+                <div class="feature-card reveal-element interactive-card">
+                    <h3>移动应用</h3>
+                    <p>iOS和Android客户端，查询、预约、续借一键搞定</p>
+                    <a href="#" class="feature-link">下载APP →</a>
+                </div>
+                <div class="feature-card reveal-element interactive-card">
+                    <h3>数字学习空间</h3>
+                    <p>在线讲座、视频教程、学习资源库</p>
+                    <a href="#" class="feature-link">开始学习 →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hours Section -->
+    <section id="hours" class="lib-section">
+        <div class="section-content">
+            <h2 class="reveal-element">开放时间</h2>
+            <div class="hours-grid">
+                <div class="hours-card reveal-element">
+                    <h3>总服务台</h3>
+                    <p class="hours-time">周一至周日 8:00 - 22:00</p>
+                </div>
+                <div class="hours-card reveal-element">
+                    <h3>自习区域</h3>
+                    <p class="hours-time">24小时开放</p>
+                </div>
+                <div class="hours-card reveal-element">
+                    <h3>特藏室</h3>
+                    <p class="hours-time">周一至周五 9:00 - 17:00</p>
+                </div>
+            </div>
+            <p class="contact-info reveal-element">
+                <strong>联系我们：</strong><br>
+                电话：021-12345678<br>
+                Email: library@yufeng.edu.cn<br>
+                地址：御风大学主校区中心区
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="lib-footer">
+        <div class="footer-content-lib">
+            <p>&copy; 2025 御风大学图书馆 | <a href="../index.html">返回主站</a> | <a href="campus.html">校园概览</a></p>
+        </div>
+    </footer>
+
+    <script src="../JavaScript/library.js"></script>
+</body>
+
+</html>
