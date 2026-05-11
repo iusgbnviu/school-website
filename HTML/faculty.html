@@ -10,7 +10,6 @@
 </head>
 
 <body>
-    <!-- Header -->
     <header>
         <div class="top-bar">
             <div class="top-bar-content">
@@ -37,9 +36,8 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-content">
+        <div class="hero-content reveal">
             <h2>教职工门户</h2>
             <p>专业支持，助力卓越教学与科研</p>
         </div>
@@ -47,50 +45,69 @@
 
     <!-- Faculty Resources -->
     <section class="section">
-        <div class="section-header">
+        <div class="section-header reveal">
             <h2>教职工资源</h2>
             <p>全方位支持您的工作</p>
+            <span class="section-accent"></span>
         </div>
         <div class="grid">
-            <div class="card">
+            <div class="card glass reveal">
                 <h3>教学支持</h3>
                 <p>提供教学资源库、课程开发工具、教学方法培训等，助力提升教学质量。</p>
-                <a href="#" class="card-link">访问资源 →</a>
+                <a class="card-link expand-trigger" data-expand="fac-teaching">访问资源 →</a>
+                <div class="expand-content" id="expand-fac-teaching">
+                    <p>教学发展中心为教师提供全方位的教学支持服务。我们建有全国最大的高校教学资源库，收录超过2万份优秀课件、教案和教学视频，涵盖所有学科门类。</p>
+                    <p>每学期举办教学工作坊、名师示范课和教学竞赛，帮助教师不断提升教学能力。新教师入职后必须参加为期一学期的"卓越教学训练营"，由资深教学名师进行一对一指导。</p>
+                    <p>学校投入专项资金支持教学创新，教师可申请最高50万元的"教学改革项目"经费进行课程开发和教学方法创新。截至目前，已有120门课程获得立项支持。</p>
+                    <span class="close-expand">收起 ▲</span>
+                </div>
             </div>
-            <div class="card">
+            <div class="card glass reveal">
                 <h3>科研支持</h3>
                 <p>科研项目申报、经费管理、学术资源获取等一站式服务，全力支持您的科研工作。</p>
-                <a href="#" class="card-link">了解更多 →</a>
+                <a class="card-link expand-trigger" data-expand="fac-research">了解更多 →</a>
+                <div class="expand-content" id="expand-fac-research">
+                    <p>科研院为教师提供从项目申报到成果转化的全流程支持。设有专门的基金申报辅导团队，由经验丰富的资深教授和科研管理专家组成，为教师提供一对一的项目申报指导。</p>
+                    <p>学校设立了"御风学者"计划，为优秀青年教师提供5年期的稳定经费支持（每年50-100万元），使其能够心无旁骛地开展长周期研究。同时设有"重大成果培育基金"，对于有望冲击国家级奖项的科研成果给予额外经费支持。</p>
+                    <p>科研管理系统实现了项目申报、经费报销、成果登记的全流程线上化，大大减轻了教师的行政负担。学校承诺：教师70%以上的工作时间可用于科研和教学，行政事务由专业人员代为处理。</p>
+                    <span class="close-expand">收起 ▲</span>
+                </div>
             </div>
-            <div class="card">
+            <div class="card glass reveal">
                 <h3>人力资源</h3>
                 <p>薪酬福利、职称评审、培训发展等人事服务，为教职工提供全面保障。</p>
-                <a href="#" class="card-link">访问系统 →</a>
+                <a class="card-link expand-trigger" data-expand="fac-hr">访问系统 →</a>
+                <div class="expand-content" id="expand-fac-hr">
+                    <p>人力资源处为全体教职工提供全面的人事服务。御风大学实行具有竞争力的薪酬体系：教授年薪中位数85万元，副教授50万元，讲师30万元。此外还提供科研绩效奖励、教学成果奖励和年终绩效奖金。</p>
+                    <p>福利保障包括：五险一金（按最高标准缴纳）、补充医疗保险（覆盖配偶和子女）、住房补贴（每月2,000-8,000元不等）、子女入学优惠（附属幼儿园至高中），以及每年一次的全面健康体检。</p>
+                    <p>职称评审采用"代表作评审制"，不再唯论文数量和影响因子论，而是综合考察教学、科研和社会服务的实际贡献。评审周期缩短至每年一次，确保优秀人才能够快速晋升。</p>
+                    <span class="close-expand">收起 ▲</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Faculty Directory -->
-    <section class="section">
-        <div class="section-header">
+    <!-- Faculty Stats -->
+    <section class="stats">
+        <div class="section-header reveal">
             <h2>师资力量</h2>
-            <p>世界一流的教学科研团队</p>
+            <span class="section-accent"></span>
         </div>
         <div class="stats-grid">
-            <div class="stat-item">
-                <h3>3,500+</h3>
+            <div class="stat-item reveal">
+                <h3 class="counter" data-target="3500">0</h3>
                 <p>教职员工</p>
             </div>
-            <div class="stat-item">
-                <h3>80%</h3>
-                <p>拥有博士学位</p>
+            <div class="stat-item reveal">
+                <h3 class="counter" data-target="80">0</h3>
+                <p>拥有博士学位（%）</p>
             </div>
-            <div class="stat-item">
-                <h3>150+</h3>
+            <div class="stat-item reveal">
+                <h3 class="counter" data-target="150">0</h3>
                 <p>国家级人才</p>
             </div>
-            <div class="stat-item">
-                <h3>50+</h3>
+            <div class="stat-item reveal">
+                <h3 class="counter" data-target="52">0</h3>
                 <p>院士专家</p>
             </div>
         </div>
@@ -98,40 +115,57 @@
 
     <!-- Professional Development -->
     <section class="section">
-        <div class="section-header">
+        <div class="section-header reveal">
             <h2>职业发展</h2>
             <p>持续成长，追求卓越</p>
+            <span class="section-accent"></span>
         </div>
         <div>
-            <div class="news-item">
+            <div class="news-item reveal">
                 <h3>教学能力提升计划</h3>
                 <p>定期举办教学工作坊、示范课观摩、教学竞赛等活动，促进教学经验交流与能力提升。</p>
-                <a href="#">参与项目 →</a>
+                <a class="expand-trigger" data-expand="fac-dev-teaching">参与项目 →</a>
+                <div class="expand-content" id="expand-fac-dev-teaching">
+                    <p>教学能力提升计划由教学发展中心组织实施，每学期开设20余场教学工作坊，主题涵盖课程设计、互动教学、翻转课堂、AI辅助教学等前沿话题。工作坊采用"做中学"模式，强调实践和反思。</p>
+                    <p>每学期举办一次全校教学竞赛，分为青年组和资深组，获奖教师可获得最高10万元的教学奖励。竞赛评委由校内外教学名师和学生代表共同组成，确保评审的多元化和公正性。</p>
+                    <p>学校还推出了"教学名师培育计划"，每年遴选10名优秀青年教师，配备专属教学导师，提供每人20万元的课程开发经费，重点培养成为未来的国家级教学名师。目前已有5位教师通过该计划获评国家级教学名师称号。</p>
+                    <span class="close-expand">收起 ▲</span>
+                </div>
             </div>
-            <div class="news-item">
+            <div class="news-item reveal">
                 <h3>国际学术交流</h3>
                 <p>支持教师赴海外访学、参加国际会议、开展合作研究，拓展国际视野。</p>
-                <a href="#">申请支持 →</a>
+                <a class="expand-trigger" data-expand="fac-dev-intl">申请支持 →</a>
+                <div class="expand-content" id="expand-fac-dev-intl">
+                    <p>国际合作与交流处为教师提供多元化的国际交流支持。每位教师每三年可申请一次为期3-12个月的海外访学，学校提供往返机票、生活补贴（每月1-3万元）和住房补贴。目前与哈佛、牛津、MIT等120所全球顶尖高校建立了教师互访机制。</p>
+                    <p>学校每年资助200名教师参加国际学术会议，资助标准为：欧美地区每人3万元，亚洲地区每人1.5万元。作为会议特邀报告人的教师，资助额度翻倍。教师发表高水平国际合作论文，学校将给予额外奖励。</p>
+                    <p>"御风-世界顶尖大学联合研究基金"每年出资1,000万元，支持教师与海外合作者开展联合研究。该基金已资助了75个国际合作项目，其中3个项目的研究成果发表于《自然》《科学》。</p>
+                    <span class="close-expand">收起 ▲</span>
+                </div>
             </div>
-            <div class="news-item">
+            <div class="news-item reveal">
                 <h3>青年教师成长</h3>
                 <p>为青年教师提供导师指导、科研启动经费、教学培训等全方位支持。</p>
-                <a href="#">了解政策 →</a>
+                <a class="expand-trigger" data-expand="fac-dev-young">了解政策 →</a>
+                <div class="expand-content" id="expand-fac-dev-young">
+                    <p>"启航计划"是御风大学专门为青年教师（入职前五年）设计的全方位成长支持计划。新入职教师自动纳入该计划，享受以下核心支持：科研启动经费（理工科100-300万元，文科30-80万元），聘任资深教授担任学术导师，首年教学工作量减免50%。</p>
+                    <p>青年教师入职前三年，每年享受一次"青年教师发展评估"，由校内外专家组成的评估委员会对教师的教学、科研和发展规划进行诊断和指导，帮助青年教师尽快找到学术方向，避免盲目发展。</p>
+                    <p>针对女性青年教师，学校特别设立了"巾帼学者计划"，提供额外的工作-生活平衡支持，包括弹性工作时间、育儿补贴（每孩每年2万元至6周岁）、以及在职称评审中合理考虑生育期间的学术产出节奏。目前已有40位女性学者通过该计划获得了重点支持。</p>
+                    <span class="close-expand">收起 ▲</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-logo">御风大学</div>
             <div class="footer-links">
-                <a href="../index.html">学校概况</a>
-                <a href="#">院系设置</a>
-                <a href="#">招生就业</a>
+                <a href="about.html">学校概况</a>
+                <a href="schools.html">院系设置</a>
+                <a href="admissions.html">招生就业</a>
                 <a href="campus.html">校园生活</a>
-                <a href="#">联系我们</a>
-                <a href="#">网站地图</a>
+                <a href="contact.html">联系我们</a>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 御风大学 Yufeng University. 版权所有</p>
@@ -139,6 +173,11 @@
         </div>
     </footer>
 
+    <button class="back-to-top" title="返回顶部">↑</button>
+
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="../JavaScript/script.js"></script>
 </body>
 

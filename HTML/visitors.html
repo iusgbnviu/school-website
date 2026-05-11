@@ -10,7 +10,6 @@
 </head>
 
 <body>
-    <!-- Header -->
     <header>
         <div class="top-bar">
             <div class="top-bar-content">
@@ -37,9 +36,8 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-content">
+        <div class="hero-content reveal">
             <h2>欢迎访问御风大学</h2>
             <p>探索美丽校园，感受御风文化</p>
         </div>
@@ -47,87 +45,128 @@
 
     <!-- Visitor Information -->
     <section class="section">
-        <div class="section-header">
+        <div class="section-header reveal">
             <h2>访客指南</h2>
             <p>让您的参观更加便捷</p>
+            <span class="section-accent"></span>
         </div>
         <div class="grid">
-            <div class="card">
+            <div class="card glass reveal">
                 <h3>校园参观</h3>
                 <p>我们提供免费的校园导览服务，带您领略御风大学的历史建筑和现代设施。</p>
-                <a href="#" class="card-link">预约参观 →</a>
+                <a class="card-link expand-trigger" data-expand="visit-tour">预约参观 →</a>
+                <div class="expand-content" id="expand-visit-tour">
+                    <p>御风大学校园对公众开放，欢迎社会各界人士前来参观访问。个人参观无需预约，可在校门口凭证件登记后入校。团体参观（10人以上）请提前3个工作日通过电话或邮件预约，我们将安排专门的校园导览服务。</p>
+                    <p>校园导览服务由经过专业培训的学生志愿者提供，导览路线涵盖图书馆、校史博物馆、樱花园、御风湖、教学主楼等标志性景点，全程约90分钟。导览服务完全免费，提供中文和英文两种语言选择。</p>
+                    <p>特别推荐每年3月下旬至4月上旬的樱花季参观，届时校园内2,000余株樱花竞相绽放，是上海最著名的赏樱胜地之一。每年11月的银杏季同样美不胜收，金色银杏叶铺满校园大道，是摄影爱好者的天堂。</p>
+                    <span class="close-expand">收起 ▲</span>
+                </div>
             </div>
-            <div class="card">
+            <div class="card glass reveal">
                 <h3>交通指南</h3>
                 <p>详细的校园地图、公共交通信息、停车指引，帮助您顺利抵达。</p>
-                <a href="#" class="card-link">查看地图 →</a>
+                <a class="card-link expand-trigger" data-expand="visit-transport">查看地图 →</a>
+                <div class="expand-content" id="expand-visit-transport">
+                    <h4>如何到达御风大学</h4>
+                    <p><strong>地铁：</strong>乘坐地铁10号线至"御风大学站"，从1号口出站即达校门。10号线连接上海虹桥火车站和虹桥机场，交通十分便利。</p>
+                    <p><strong>公交：</strong>55路、61路、147路、817路、910路等多条公交线路在校门口设有"御风大学站"。</p>
+                    <p><strong>自驾：</strong>校园设有访客停车场（位于西门入口），收费标准为5元/小时，每日30元封顶。周末和节假日车位较为紧张，建议绿色出行。导航地址：上海市杨浦区御风路100号。</p>
+                    <p><strong>出租车/网约车：</strong>从虹桥机场出发约45分钟车程，费用约80元；从浦东国际机场出发约60分钟车程，费用约150元。</p>
+                    <div class="img-placeholder" style="margin-top:1rem;">交通路线图将在升级后以交互式地图形式呈现</div>
+                    <span class="close-expand">收起 ▲</span>
+                </div>
             </div>
-            <div class="card">
+            <div class="card glass reveal">
                 <h3>访客设施</h3>
                 <p>校园内设有访客中心、餐厅、咖啡厅等设施，为您提供舒适的参观体验。</p>
-                <a href="#" class="card-link">了解详情 →</a>
+                <a class="card-link expand-trigger" data-expand="visit-facilities">了解详情 →</a>
+                <div class="expand-content" id="expand-visit-facilities">
+                    <p>访客中心位于校门入口处（开放时间9:00-18:00），提供校园地图、参观咨询、行李寄存和轮椅租借等服务。中心内有舒适的休息区，播放学校宣传片，帮助您快速了解御风大学的历史和文化。</p>
+                    <p>校园内有多处餐饮选择对访客开放：访客餐厅（位于行政楼地下一层，提供中式套餐，人均25-40元）、校园咖啡厅"御风时光"（位于图书馆一楼，提供咖啡、茶饮和简餐）以及散布校园各处的自动售货机。</p>
+                    <p>卫生间分布在各主要建筑一楼，方便访客使用。校园WiFi（SSID: Yufeng-Guest）对访客免费开放，连接后通过手机号验证即可上网。无障碍通道覆盖校园所有主要建筑，行动不便的访客可以放心参观。</p>
+                    <span class="close-expand">收起 ▲</span>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Campus Tours -->
     <section class="section">
-        <div class="section-header">
+        <div class="section-header reveal">
             <h2>校园游览</h2>
             <p>不容错过的景点</p>
+            <span class="section-accent"></span>
         </div>
         <div>
-            <div class="news-item">
+            <div class="news-item reveal">
                 <h3>御风图书馆</h3>
                 <p>建筑面积50,000平方米，藏书500万册，是学校的标志性建筑。采用现代化设计，融合传统与创新。</p>
                 <a href="library.html">虚拟参观 →</a>
             </div>
-            <div class="news-item">
+            <div class="news-item reveal">
                 <h3>科技创新中心</h3>
-                <p>汇集最先进的实验室和研究设施，展示学校在科研领域的卓越成就。</p>
-                <a href="#">了解更多 →</a>
+                <p>汇集最先进的实验室和研究设施，展示学校在科研领域的卓越成就。中心内设有公众科学展厅，免费对外开放。</p>
+                <a class="expand-trigger" data-expand="visit-tech-center">了解更多 →</a>
+                <div class="expand-content" id="expand-visit-tech-center">
+                    <p>科技创新中心坐落于校园东侧，建筑面积80,000平方米，是御风大学科研实力的集中展示区。中心的公众科学展厅面积3,000平方米，设有量子科技、人工智能、生命科学和新能源四大主题展区。</p>
+                    <p>量子科技展区展示了世界上第一台教学用超导量子计算机原型机，参观者可以通过互动屏幕了解量子计算的基本原理。AI展区设有趣味互动项目——您可以和AI棋手对弈，或者让AI根据您的描述生成一幅画作。</p>
+                    <p>公众科学展厅每周二至周日10:00-16:00免费开放，周六下午14:00有大学生志愿者提供免费讲解服务。团体参观（10人以上）可预约工作日专场讲解。科技中心每年还举办"科学开放日"活动（11月第一个周末），届时所有实验室向公众开放。</p>
+                    <span class="close-expand">收起 ▲</span>
+                </div>
             </div>
-            <div class="news-item">
+            <div class="news-item reveal">
                 <h3>校史博物馆</h3>
-                <p>追溯御风大学175年的辉煌历史，了解学校发展历程和重要成就。</p>
-                <a href="#">预约参观 →</a>
+                <p>追溯御风大学175年的辉煌历史，了解学校发展历程和重要成就。馆藏有珍贵的历史文物和文献资料。</p>
+                <a class="expand-trigger" data-expand="visit-museum">预约参观 →</a>
+                <div class="expand-content" id="expand-visit-museum">
+                    <p>御风大学校史博物馆坐落在校园中心位置，建筑本身是一座建于1920年的中西合璧式历史建筑，已被列为上海市文物保护单位。博物馆于2020年完成全面翻新，展览面积2,500平方米，分为"草创维艰""烽火岁月""光复重建""改革开放"和"迈向卓越"五个展厅。</p>
+                    <p>馆藏珍品包括：建校初期（1850年）的御赐匾额、民国时期的教育部批文原件、抗战期间学校西迁的珍贵照片和日记、1952年院系调整时的历史文件，以及建校175年来的各种徽章、证书和纪念品。其中最具传奇色彩的展品是1937年一位教授在战火中抢救出的一批古籍善本。</p>
+                    <p>博物馆开放时间：周二至周日10:00-16:00（周一闭馆）。个人参观无需预约，团体参观（10人以上）需提前一周预约。每周六下午14:00提供免费讲解服务。博物馆入口处设有纪念品商店，出售御风大学主题文创产品。</p>
+                    <span class="close-expand">收起 ▲</span>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Practical Information -->
-    <section class="section">
-        <div class="section-header">
+    <section class="section stats">
+        <div class="section-header reveal">
             <h2>实用信息</h2>
             <p>您需要知道的</p>
+            <span class="section-accent"></span>
         </div>
-        <div class="grid">
-            <div class="card">
+        <div class="grid" style="margin-top:2rem;">
+            <div class="card glass reveal">
                 <h3>开放时间</h3>
-                <p>校园参观：周一至周日 9:00-17:00<br>图书馆：周一至周日 8:00-22:00<br>博物馆：周二至周日 10:00-16:00</p>
+                <p>校园参观：周一至周日 9:00-17:00</p>
+                <p>图书馆：周一至周日 8:00-22:00</p>
+                <p>博物馆：周二至周日 10:00-16:00</p>
             </div>
-            <div class="card">
+            <div class="card glass reveal">
                 <h3>联系方式</h3>
-                <p>访客中心电话：021-12345678<br>Email: visitors@yufeng.edu.cn<br>地址：中国上海市御风路100号</p>
+                <p>访客中心电话：021-12345678</p>
+                <p>Email: visitors@yufeng.edu.cn</p>
+                <p>地址：中国上海市御风路100号</p>
             </div>
-            <div class="card">
+            <div class="card glass reveal">
                 <h3>注意事项</h3>
-                <p>• 请携带有效身份证件<br>• 遵守校园管理规定<br>• 保持校园环境整洁<br>• 爱护校园设施</p>
+                <p>• 请携带有效身份证件</p>
+                <p>• 遵守校园管理规定</p>
+                <p>• 保持校园环境整洁</p>
+                <p>• 爱护校园设施</p>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-logo">御风大学</div>
             <div class="footer-links">
-                <a href="../index.html">学校概况</a>
-                <a href="#">院系设置</a>
-                <a href="#">招生就业</a>
+                <a href="about.html">学校概况</a>
+                <a href="schools.html">院系设置</a>
+                <a href="admissions.html">招生就业</a>
                 <a href="campus.html">校园生活</a>
-                <a href="#">联系我们</a>
-                <a href="#">网站地图</a>
+                <a href="contact.html">联系我们</a>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 御风大学 Yufeng University. 版权所有</p>
@@ -135,6 +174,11 @@
         </div>
     </footer>
 
+    <button class="back-to-top" title="返回顶部">↑</button>
+
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="../JavaScript/script.js"></script>
 </body>
 

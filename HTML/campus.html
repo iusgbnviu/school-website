@@ -10,7 +10,6 @@
 </head>
 
 <body>
-    <!-- Header -->
     <header>
         <div class="top-bar">
             <div class="top-bar-content">
@@ -37,9 +36,8 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-content">
+        <div class="hero-content reveal">
             <h2>御风校园</h2>
             <p>在这里，每一天都充满可能</p>
         </div>
@@ -48,103 +46,160 @@
     <!-- Campus Facilities Highlight - Library -->
     <section class="featured-spotlight">
         <div class="section spotlight-content">
-            <div class="spotlight-badge">校园地标</div>
-            <h2 class="spotlight-title">御风图书馆 - 知识的殿堂</h2>
-            <div class="spotlight-subtitle">现代科技与传统文化的完美融合</div>
-            <div class="spotlight-body">
+            <div class="spotlight-badge reveal">校园地标</div>
+            <h2 class="spotlight-title reveal">御风图书馆 - 知识的殿堂</h2>
+            <div class="spotlight-subtitle reveal">现代科技与传统文化的完美融合</div>
+            <div class="spotlight-body reveal">
                 <p>御风图书馆是学校最具标志性的建筑之一，建筑面积达50,000平方米，藏书超过500万册，提供3,000个阅读座位。</p>
                 <p>图书馆采用最先进的智能化管理系统，提供24小时自助服务。馆内设有多功能研讨室、创新实验室、数字资源中心等现代化设施。</p>
                 <p>建筑设计融合了传统中式美学与现代极简主义，大面积采光玻璃幕墙让自然光线充满整个空间，营造出舒适的阅读环境。</p>
                 <div style="text-align: center; margin: 40px 0;">
-                    <a href="library.html" class="btn-primary"
+                    <a href="library.html" class="btn-gold"
                         style="display: inline-block; font-size: 1.2em; padding: 15px 40px;">探索图书馆官网 →</a>
                 </div>
-                <p style="color: #721817; font-size: 0.95em; text-align: center;">体验Apple风格的流畅交互与视觉设计</p>
+                <p style="color: var(--gold-light); font-size: 0.95em; text-align: center;">体验Apple风格的流畅交互与视觉设计</p>
             </div>
         </div>
     </section>
 
     <!-- Campus Facilities -->
     <section class="section">
-        <div class="section-header">
+        <div class="section-header reveal">
             <h2>校园设施</h2>
             <p>一流的学习生活环境</p>
+            <span class="section-accent"></span>
         </div>
         <div class="grid">
-            <div class="card">
+            <div class="card glass reveal">
                 <h3>教学楼群</h3>
-                <p>现代化教学楼配备智慧教室、多媒体设备、无线网络等先进设施。</p>
-                <a href="#" class="card-link">了解更多 →</a>
+                <p>现代化教学楼配备智慧教室、多媒体设备、无线网络等先进设施，为师生提供优质的教学环境。</p>
+                <a class="card-link expand-trigger" data-expand="campus-teaching">了解更多 →</a>
+                <div class="expand-content" id="expand-campus-teaching">
+                    <p>御风大学教学楼群总建筑面积达30万平方米，包括主教学楼、文科楼、理科楼、工科楼和综合教学楼五大区域。所有教室均配备4K智能显示屏、全向麦克风和自动录播系统，支持线上线下混合式教学。</p>
+                    <p>学校设有120间智慧教室，可容纳12至300人不等。每间智慧教室均配备AI助教系统，能够实时生成课堂笔记、翻译和字幕。2024年新建成的"未来教室"采用全息投影技术，实现了远程沉浸式教学体验。</p>
+                    <p>教学楼内设有充足的自习空间——每层配置了独立自习室和开放讨论区，总计提供超过8,000个自习座位。所有区域实现WiFi 6全覆盖，24小时开放。</p>
+                    <span class="close-expand">收起 ▲</span>
+                </div>
             </div>
-            <div class="card">
+            <div class="card glass reveal">
                 <h3>实验室中心</h3>
-                <p>拥有国家重点实验室3个，各类专业实验室200余个，设备先进。</p>
-                <a href="#" class="card-link">了解更多 →</a>
+                <p>拥有国家重点实验室3个，各类专业实验室200余个，设备总值超过80亿元。</p>
+                <a class="card-link expand-trigger" data-expand="campus-labs">了解更多 →</a>
+                <div class="expand-content" id="expand-campus-labs">
+                    <p>御风大学实验中心是亚洲规模最大、设备最先进的高校实验室集群之一。中心拥有三个国家重点实验室（量子物理、生物医学工程、人工智能与大数据），八个教育部重点实验室和十五个省部级研究中心。</p>
+                    <p>大型仪器共享平台配备有价值超过30亿元的高端科研设备，包括冷冻电镜（Cryo-EM）、超导量子干涉仪、基因测序仪等尖端仪器，对全校师生开放预约使用，利用率达到85%以上。</p>
+                    <p>实验中心实行"7×24小时"运行模式，配备专业技术人员200余人，为师生提供全天候的实验支持服务。本科生自大二起即可通过网上预约系统申请使用各类实验室资源。</p>
+                    <span class="close-expand">收起 ▲</span>
+                </div>
             </div>
-            <div class="card">
+            <div class="card glass reveal">
                 <h3>体育设施</h3>
                 <p>综合体育馆、游泳馆、网球场、足球场等设施齐全，满足各类运动需求。</p>
-                <a href="#" class="card-link">了解更多 →</a>
+                <a class="card-link expand-trigger" data-expand="campus-sports">了解更多 →</a>
+                <div class="expand-content" id="expand-campus-sports">
+                    <p>御风大学体育中心占地200亩，设施包括一座8,000座综合体育馆、奥林匹克标准游泳池、400米标准田径场、天然草坪足球场、12片网球场、8片篮球场以及健身房、瑜伽室、攀岩墙等。</p>
+                    <p>综合体育馆可承办CBA篮球赛、国际羽毛球公开赛等高水平赛事。健身房面积达3,000平方米，配备Life Fitness最新系列器材，每天6:00-23:00对师生免费开放。</p>
+                    <p>学校拥有30余个体育社团，涵盖足球、篮球、网球、游泳、武术、龙舟、击剑、马术等项目。校龙舟队连续五年获得全国大学生龙舟锦标赛冠军，已成为御风体育的一张名片。</p>
+                    <span class="close-expand">收起 ▲</span>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Student Life -->
-    <section class="section">
-        <div class="section-header">
+    <section class="section blob-bg">
+        <div class="section-header reveal">
             <h2>学生生活</h2>
             <p>丰富多彩的校园文化</p>
+            <span class="section-accent"></span>
         </div>
         <div class="grid">
-            <div class="card">
+            <div class="card glass reveal">
                 <h3>学生宿舍</h3>
                 <p>现代化学生公寓，配备空调、热水、网络等设施，营造温馨的生活环境。</p>
-                <a href="#" class="card-link">了解更多 →</a>
+                <a class="card-link expand-trigger" data-expand="campus-dorm">了解更多 →</a>
+                <div class="expand-content" id="expand-campus-dorm">
+                    <p>御风大学现有学生公寓楼28栋，提供单人间、双人间和四人间三种房型供学生选择。所有宿舍均配备中央空调、独立卫浴、热水器、洗衣机和WiFi。每层楼设有公共厨房、学习室和休闲区。</p>
+                    <p>2023年新建成的"御风书院"是学校最高品质的学生公寓，采用酒店式管理，每层配备专职生活导师，一楼设有共享客厅、咖啡吧和健身房。书院采用申请制，本科生和研究生均可申请。</p>
+                    <p>宿舍费用合理，双人间每学年3,000元，单人间每学年6,000元。学校为家庭经济困难学生提供住宿补贴，确保每位学生都能住得起、住得好。</p>
+                    <span class="close-expand">收起 ▲</span>
+                </div>
             </div>
-            <div class="card">
+            <div class="card glass reveal">
                 <h3>餐饮服务</h3>
                 <p>6个学生食堂提供中西式餐饮，满足不同口味需求，价格实惠。</p>
-                <a href="#" class="card-link">了解更多 →</a>
+                <a class="card-link expand-trigger" data-expand="campus-dining">了解更多 →</a>
+                <div class="expand-content" id="expand-campus-dining">
+                    <p>御风大学现有6个学生食堂和3个教工餐厅，总面积超过2万平方米，可同时容纳8,000人就餐。食堂涵盖中餐各大菜系（川、粤、鲁、苏、湘等），以及日韩料理、西餐、清真餐等多种选择。</p>
+                    <p>"御风美食街"是校园内最受欢迎的就餐地点，汇集了20多家品牌餐饮和特色小吃，从星巴克到兰州拉面，从日式拉面到新疆大盘鸡，应有尽有。人均消费15-30元，支持校园卡和移动支付。</p>
+                    <p>食堂的食品安全管理采用HACCP体系，所有食材可追溯，每周由学生伙食管委会进行抽查评分。学校餐饮服务连续十年被评为"全国高校餐饮服务先进单位"。</p>
+                    <span class="close-expand">收起 ▲</span>
+                </div>
             </div>
-            <div class="card">
+            <div class="card glass reveal">
                 <h3>文化活动</h3>
                 <p>音乐厅、剧场、美术馆等文化设施，定期举办高水平文化艺术活动。</p>
-                <a href="#" class="card-link">了解更多 →</a>
+                <a class="card-link expand-trigger" data-expand="campus-culture">了解更多 →</a>
+                <div class="expand-content" id="expand-campus-culture">
+                    <p>御风大学文化艺术中心由音乐厅（1,200座）、大剧场（2,500座）、美术馆（2,000平方米展览面积）和多功能排练厅组成。每年举办各类演出和展览超过200场。</p>
+                    <p>"御风艺术节"是学校的品牌文化活动，每年5月举行，持续两周。期间举办音乐会、话剧演出、舞蹈比赛、艺术展览、诗歌朗诵会等30余项活动，是全校师生共同期待的文化盛宴。</p>
+                    <p>学校拥有学生交响乐团、民族管弦乐团、合唱团、话剧社、舞蹈团等10个校级艺术团体，多次在全国大学生艺术展演中荣获金奖。学生艺术团定期在音乐厅举办免费演出，丰富校园文化生活。</p>
+                    <span class="close-expand">收起 ▲</span>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Campus Map -->
     <section class="section">
-        <div class="section-header">
+        <div class="section-header reveal">
             <h2>校园地图</h2>
             <p>探索御风校园</p>
+            <span class="section-accent"></span>
         </div>
         <div>
-            <div class="news-item">
+            <div class="news-item reveal">
                 <h3>主校区</h3>
-                <p>占地面积2,000亩，建筑面积120万平方米，绿化覆盖率达45%，环境优美。</p>
-                <a href="#">查看地图 →</a>
+                <p>占地面积2,000亩，建筑面积120万平方米，绿化覆盖率达45%，环境优美。主校区分布着大部分学院教学楼、图书馆、行政楼和学生生活区。</p>
+                <a class="expand-trigger" data-expand="campus-main">查看地图 →</a>
+                <div class="expand-content" id="expand-campus-main">
+                    <p>主校区位于上海市杨浦区御风路100号，占地面积2,000亩（约133公顷），建筑面积120万平方米。校园规划由国际知名建筑事务所以"园林中的大学"为理念设计，绿化覆盖率高达45%，拥有御风湖、樱花园、银杏大道等多处标志性景观。</p>
+                    <p>主校区核心区域分布：</p>
+                    <ul>
+                        <li>北区（教学区）：主教学楼、文理科楼群、图书馆</li>
+                        <li>东区（科研区）：三大国家重点实验室、科技创新中心</li>
+                        <li>南区（生活区）：学生公寓、食堂、体育中心</li>
+                        <li>西区（文化区）：音乐厅、美术馆、校史博物馆</li>
+                        <li>中心区（行政&景观）：行政楼、御风湖、樱花园</li>
+                    </ul>
+                    <div class="img-placeholder" style="margin-top:1rem;">校园地图将在升级后以交互式地图形式呈现</div>
+                    <span class="close-expand">收起 ▲</span>
+                </div>
             </div>
-            <div class="news-item">
+            <div class="news-item reveal">
                 <h3>东校区</h3>
-                <p>主要为研究生院和科研机构，拥有先进的科研设施和实验室。</p>
-                <a href="#">查看地图 →</a>
+                <p>主要为研究生院和科研机构，拥有先进的科研设施和实验室，占地800亩。</p>
+                <a class="expand-trigger" data-expand="campus-east">查看地图 →</a>
+                <div class="expand-content" id="expand-campus-east">
+                    <p>东校区位于主校区以东3公里，占地800亩（约53公顷），是研究生院、部分理工科院系和大型科研设施的所在地。东校区以"科技与自然共生"为设计理念，建筑风格更加现代简约。</p>
+                    <p>东校区主要设施包括：研究生院大楼、环境科学与工程学院、航空航天学院、大型科学计算中心、国家超算中心御风分中心，以及正在建设中的量子科技产业园。</p>
+                    <p>东校区与主校区之间有免费校车往返，15分钟一班。东校区也拥有独立的食堂、体育馆和学生公寓，形成了一个完整的小型学术社区。</p>
+                    <div class="img-placeholder" style="margin-top:1rem;">东校区平面图将在升级后以交互式地图形式呈现</div>
+                    <span class="close-expand">收起 ▲</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-logo">御风大学</div>
             <div class="footer-links">
-                <a href="../index.html">学校概况</a>
-                <a href="#">院系设置</a>
-                <a href="#">招生就业</a>
+                <a href="about.html">学校概况</a>
+                <a href="schools.html">院系设置</a>
+                <a href="admissions.html">招生就业</a>
                 <a href="campus.html">校园生活</a>
-                <a href="#">联系我们</a>
-                <a href="#">网站地图</a>
+                <a href="contact.html">联系我们</a>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 御风大学 Yufeng University. 版权所有</p>
@@ -152,6 +207,11 @@
         </div>
     </footer>
 
+    <button class="back-to-top" title="返回顶部">↑</button>
+
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="../JavaScript/script.js"></script>
 </body>
 
