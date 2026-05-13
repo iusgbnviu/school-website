@@ -4,6 +4,18 @@
 (function () {
     'use strict';
 
+    // Shared state
+    var EXPAND_PREFIX = 'expand-';
+    var scrollLockCount = 0;
+    function requestScrollLock() {
+        if (scrollLockCount === 0) document.body.style.overflow = 'hidden';
+        scrollLockCount++;
+    }
+    function releaseScrollLock() {
+        scrollLockCount = Math.max(0, scrollLockCount - 1);
+        if (scrollLockCount === 0) document.body.style.overflow = '';
+    }
+
     // ========================================
     // 1. LENIS SMOOTH SCROLL
     // ========================================
@@ -109,7 +121,7 @@
         e.preventDefault();
 
         var targetId = trigger.getAttribute('data-expand');
-        var target = document.getElementById('expand-' + targetId);
+        var target = document.getElementById(EXPAND_PREFIX + targetId);
         if (!target) return;
 
         var isActive = target.classList.contains('active');
@@ -122,7 +134,6 @@
                 if (el !== target) el.classList.remove('active');
             });
         }
-        // Also close triggers
         if (section) {
             var allTriggers = section.querySelectorAll('.expand-trigger.active');
             allTriggers.forEach(function (el) {
@@ -137,7 +148,6 @@
         } else {
             target.classList.add('active');
             trigger.classList.add('active');
-            // Scroll to content
             if (window.__lenis) {
                 setTimeout(function () {
                     window.__lenis.scrollTo(target, { offset: -100, duration: 1 });
@@ -157,7 +167,7 @@
         var expandContent = closeBtn.closest('.expand-content');
         if (!expandContent) return;
 
-        var expandId = expandContent.id.replace('expand-', '');
+        var expandId = expandContent.id.replace(EXPAND_PREFIX, '');
         var trigger = document.querySelector('[data-expand="' + expandId + '"]');
 
         expandContent.classList.remove('active');
@@ -171,14 +181,14 @@
         var modal = document.getElementById(modalId);
         if (!modal) return;
         modal.classList.add('active');
-        document.body.style.overflow = 'hidden';
+        requestScrollLock();
     }
 
     function closeModal(modalId) {
         var modal = document.getElementById(modalId);
         if (!modal) return;
         modal.classList.remove('active');
-        document.body.style.overflow = '';
+        releaseScrollLock();
     }
 
     // Open modal via data-modal attribute
@@ -242,49 +252,60 @@
     });
 
     // ========================================
-    // 5. NAVBAR SCROLL BEHAVIOR
+    // 5. MOBILE NAV TOGGLE
     // ========================================
-    if (typeof Lenis !== 'undefined') {
-        if (window.__lenis) {
-            window.__lenis.on('scroll', function (_a) {
-                var scroll = _a.scroll;
-                var header = document.querySelector('header');
-                if (!header) return;
-                if (scroll > 80) {
-                    header.style.boxShadow = '0 4px 30px rgba(0,0,0,0.12)';
-                } else {
-                    header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.08)';
-                }
-            });
-        }
-    } else {
-        // Fallback: simple scroll listener
-        var lastScrollY = 0;
-        window.addEventListener('scroll', function () {
-            var header = document.querySelector('header');
-            if (!header) return;
-            var scrollY = window.scrollY;
-            if (scrollY > 80) {
-                header.style.boxShadow = '0 4px 30px rgba(0,0,0,0.12)';
+    var hamburger = document.querySelector('.hamburger');
+    var mobileNav = document.querySelector('.mobile-nav');
+    if (hamburger && mobileNav) {
+        function setMobileNav(open) {
+            if (open) {
+                hamburger.classList.add('active');
+                mobileNav.classList.add('active');
+                requestScrollLock();
             } else {
-                header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.08)';
+                hamburger.classList.remove('active');
+                mobileNav.classList.remove('active');
+                releaseScrollLock();
             }
-            lastScrollY = scrollY;
-        }, { passive: true });
+        }
+
+        hamburger.addEventListener('click', function () {
+            setMobileNav(!hamburger.classList.contains('active'));
+        });
+
+        // Single delegated listener for all nav links
+        mobileNav.addEventListener('click', function (e) {
+            if (e.target.closest('a')) setMobileNav(false);
+        });
     }
 
     // ========================================
-    // 6. BACK TO TOP BUTTON
+    // 7. NAVBAR SCROLL BEHAVIOR
+    // ========================================
+    var header = document.querySelector('header');
+    if (header) {
+        function updateHeaderShadow(scrollY) {
+            header.style.boxShadow = scrollY > 80
+                ? '0 4px 30px rgba(0,0,0,0.12)'
+                : '0 2px 20px rgba(0,0,0,0.08)';
+        }
+        if (typeof Lenis !== 'undefined' && window.__lenis) {
+            window.__lenis.on('scroll', function (_a) { updateHeaderShadow(_a.scroll); });
+        } else {
+            window.addEventListener('scroll', function () {
+                updateHeaderShadow(window.scrollY);
+            }, { passive: true });
+        }
+    }
+
+    // ========================================
+    // 8. BACK TO TOP BUTTON
     // ========================================
     var backToTop = document.querySelector('.back-to-top');
     if (backToTop) {
         function toggleBackToTop() {
             var scrollY = window.__lenis ? window.__lenis.scroll : window.scrollY;
-            if (scrollY > 500) {
-                backToTop.classList.add('visible');
-            } else {
-                backToTop.classList.remove('visible');
-            }
+            backToTop.classList.toggle('visible', scrollY > 500);
         }
 
         if (typeof Lenis !== 'undefined' && window.__lenis) {

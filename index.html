@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>御风大学 | Yufeng University</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23A51C30'/><text x='16' y='23' text-anchor='middle' font-size='20' font-weight='bold' fill='white' font-family='serif'>御</text></svg>">
     <meta name="description" content="御风大学致力于卓越的教学、学习和研究，培养在全球有影响力的领导者。">
     <link rel="stylesheet" href="CSS/style.css">
 </head>
@@ -34,11 +35,25 @@
                 <li><a href="#news">新闻</a></li>
                 <li><a href="HTML/campus.html">校园</a></li>
             </ul>
+            <button class="hamburger" aria-label="菜单">
+                <span></span><span></span><span></span>
+            </button>
         </nav>
+    
+            <div class="mobile-nav">
+                <a href="#about">关于</a>
+                <a href="#academics">教学</a>
+                <a href="#research">科研</a>
+                <a href="#news">新闻</a>
+                <a href="HTML/campus.html">校园</a>
+                <a href="HTML/alumni.html">校友</a>
+                <a href="HTML/students.html">学生</a>
+                <a href="HTML/visitors.html">访客</a>
+            </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" style='background-image: linear-gradient(rgba(30,30,30,0.5),rgba(30,30,30,0.3)), url("img/slide1.jpg"); background-size: cover; background-position: center;'>
         <div class="hero-content reveal">
             <h2>卓越始于此处</h2>
             <p>御风大学致力于追求卓越的教学、学习和研究，培养在全球有影响力的领导者</p>
@@ -313,16 +328,20 @@
         </div>
         <div class="gallery-grid">
             <div class="gallery-item reveal-scale">
-                <div class="img-placeholder">图书馆<br><small>建筑面积50,000㎡ · 藏书500万册</small></div>
+                <img src="img/campus.jpg" alt="图书馆" loading="lazy" decoding="async">
+                <div class="gallery-label">图书馆<small>建筑面积50,000㎡ · 藏书500万册</small></div>
             </div>
             <div class="gallery-item reveal-scale">
-                <div class="img-placeholder">教学主楼<br><small>智慧教室 · 现代化教学设施</small></div>
+                <img src="img/slide1.jpg" alt="教学主楼" loading="lazy" decoding="async">
+                <div class="gallery-label">教学主楼<small>智慧教室 · 现代化教学设施</small></div>
             </div>
             <div class="gallery-item reveal-scale">
-                <div class="img-placeholder">体育馆<br><small>8,000座综合体育馆</small></div>
+                <img src="img/slide2.jpg" alt="体育馆" loading="lazy" decoding="async">
+                <div class="gallery-label">体育馆<small>8,000座综合体育馆</small></div>
             </div>
             <div class="gallery-item reveal-scale">
-                <div class="img-placeholder">樱花园<br><small>每年三月 · 樱花盛开</small></div>
+                <img src="img/slide4.jpg" alt="樱花园" loading="lazy" decoding="async">
+                <div class="gallery-label">樱花园<small>每年三月 · 樱花盛开</small></div>
             </div>
         </div>
         <div style="text-align:center; margin-top: 2rem;" class="reveal">
